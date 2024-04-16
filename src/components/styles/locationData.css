@@ -1,0 +1,31 @@
+.location {
+    background-color: #072226;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.location__name {
+    color: #56ED51;
+}
+.location__list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.location__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.location__item span:last-child {
+    text-align: center;
+    color: #777;
+}

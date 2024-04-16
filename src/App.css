@@ -1,0 +1,249 @@
+
+/*-----reset-----*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url(https://rickandmortypod.com/storage/2018/11/cropped-RM_page-header_background1-3.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  border-radius: 20px;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+input,
+button {
+  color: white;
+  display: inline-block;
+  font-family: inherit;
+  height: 20px;
+  text-align: center;
+  background-color: black;
+  border: 3px solid #71A821;
+  box-shadow: 0 0 5px;
+  border-radius: 5px 0 0 5px;
+
+}
+
+button {
+  border: none;
+  padding: 0 15px;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;color: blue;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.app__form {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.app__input {
+  border-radius: 10px 0 0 10px;
+}
+
+.app__btn {
+  background-color: #71A821;
+  border: 2 px solid #56ED51;
+  box-shadow: 0 0 5px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.app__btn:hover {
+  filter: brightness(1.1);
+}
+
+.header {
+height: 100px;
+width: 100%;
+padding: 20px;
+background-color: #252325;
+background-image: url("../src/header.gif");
+background-repeat: no-repeat;
+background-position: bottom right;
+background-size: 400px ;
+ }
+
+ .header img {
+  width: 500px;
+  height: 100px;
+
+ }
+
+ @media (max-width: 768px) {
+  .header img {
+    display: none;
+  }
+}
+
+
+ .btn-76,
+.btn-76 *,
+.btn-76 :after,
+.btn-76 :before,
+.btn-76:after,
+.btn-76:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-76 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-76:disabled {
+  cursor: default;
+}
+
+.btn-76:-moz-focusring {
+  outline: auto;
+}
+
+.btn-76 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-76 [hidden] {
+  display: none;
+}
+
+.btn-76 {
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  --neon: #56ED51;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 500;
+  -webkit-mask-image: none;
+  outline: 3px solid #71A821;
+  outline-offset: -3px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s linear 0.1s;
+  font-size: 8px;
+  width: 50px;
+}
+
+.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #fff;
+  outline-color: transparent;
+  transition: 0.2s linear 0.6s;
+}
+
+.btn-76 span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+
+.btn-76 .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+
+.btn-76:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+
+.btn-76 .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+
+.btn-76:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+
+.btn-76 .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+
+.btn-76:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+
+.btn-76 .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+
+.btn-76:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
